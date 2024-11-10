@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>基于Hexo和Github搭建个人博客 | Dre4m1nd</title><meta name="author" content="Dre4m1nd"><meta name="copyright" content="Dre4m1nd"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="参考文章：https:&#x2F;&#x2F;blog.csdn.net&#x2F;yaorongke&#x2F;article&#x2F;details&#x2F;119089190 一、准备工作1. GitHub账号需要有一个GitHub账号，没有的话到 官网 申请一个。注册很简单，不懂的话可以参考 GitHub申请账号 2. 安装Git在自己电脑上安装好Git，hexo部署到GitHub时要用。网上找篇教程或者参考 Git安装(Windows) 3."><meta property="og:type" content="article"><meta property="og:title" content="基于Hexo和Github搭建个人博客"><meta property="og:url" content="http://dre4m1nd.github.io/2024/11/04/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html"><meta property="og:site_name" content="Dre4m1nd"><meta property="og:description" content="参考文章：https:&#x2F;&#x2F;blog.csdn.net&#x2F;yaorongke&#x2F;article&#x2F;details&#x2F;119089190 一、准备工作1. GitHub账号需要有一个GitHub账号，没有的话到 官网 申请一个。注册很简单，不懂的话可以参考 GitHub申请账号 2. 安装Git在自己电脑上安装好Git，hexo部署到GitHub时要用。网上找篇教程或者参考 Git安装(Windows) 3."><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://dre4m1nd.github.io/img/Dre4m1nd.jpg"><meta property="article:published_time" content="2024-11-04T10:07:28.000Z"><meta property="article:modified_time" content="2024-11-04T10:08:17.918Z"><meta property="article:author" content="Dre4m1nd"><meta property="article:tag" content="个人博客"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="http://dre4m1nd.github.io/img/Dre4m1nd.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://dre4m1nd.github.io/2024/11/04/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>(() => {
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>基于Hexo和Github搭建个人博客 | Dre4m1nd</title><meta name="author" content="Dre4m1nd"><meta name="copyright" content="Dre4m1nd"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="参考文章：https:&#x2F;&#x2F;blog.csdn.net&#x2F;yaorongke&#x2F;article&#x2F;details&#x2F;119089190 一、准备工作1. GitHub账号需要有一个GitHub账号，没有的话到 官网 申请一个。注册很简单，不懂的话可以参考 GitHub申请账号 2. 安装Git在自己电脑上安装好Git，hexo部署到GitHub时要用。网上找篇教程或者参考 Git安装(Windows) 3."><meta property="og:type" content="article"><meta property="og:title" content="基于Hexo和Github搭建个人博客"><meta property="og:url" content="http://dre4m1nd.github.io/2024/11/04/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html"><meta property="og:site_name" content="Dre4m1nd"><meta property="og:description" content="参考文章：https:&#x2F;&#x2F;blog.csdn.net&#x2F;yaorongke&#x2F;article&#x2F;details&#x2F;119089190 一、准备工作1. GitHub账号需要有一个GitHub账号，没有的话到 官网 申请一个。注册很简单，不懂的话可以参考 GitHub申请账号 2. 安装Git在自己电脑上安装好Git，hexo部署到GitHub时要用。网上找篇教程或者参考 Git安装(Windows) 3."><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://dre4m1nd.github.io/img/Dre4m1nd.jpg"><meta property="article:published_time" content="2024-11-04T10:07:28.000Z"><meta property="article:modified_time" content="2024-11-04T10:08:17.918Z"><meta property="article:author" content="Dre4m1nd"><meta property="article:tag" content="个人博客"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="http://dre4m1nd.github.io/img/Dre4m1nd.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://dre4m1nd.github.io/2024/11/04/%E5%9F%BA%E4%BA%8EHexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//hm.baidu.com"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>(() => {
       
     const saveToLocal = {
       set: (key, value, ttl) => {
@@ -61,7 +61,7 @@
       const activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
         }
       }
 
@@ -86,7 +86,16 @@
     }
     detectApple()
   
-    })()</script><script>const GLOBAL_CONFIG = {
+    })()</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?d4f70d8e726baa25349d5b4c01691cc1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')</script><script>const GLOBAL_CONFIG = {
   root: '/',
   algolia: undefined,
   localSearch: undefined,
